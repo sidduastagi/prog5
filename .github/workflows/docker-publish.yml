@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: <username>/<repo-name>
+          images: <sidduastagi141204>/<siddu11>
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
