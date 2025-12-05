@@ -19,11 +19,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Extract metadata (tags, labels) for Docker
+      - name: Extract metadata (tags, labels)
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: <sidduastagi141204>/<siddu11>
+          images: sidduastagi141204/siddu11
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
